@@ -14,16 +14,224 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      cabanas: {
+        Row: {
+          animales_destacados: number | null
+          created_at: string
+          descripcion: string | null
+          id: string
+          logo_url: string | null
+          nombre: string
+          remates_activos: number | null
+          ubicacion: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          animales_destacados?: number | null
+          created_at?: string
+          descripcion?: string | null
+          id?: string
+          logo_url?: string | null
+          nombre: string
+          remates_activos?: number | null
+          ubicacion: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          animales_destacados?: number | null
+          created_at?: string
+          descripcion?: string | null
+          id?: string
+          logo_url?: string | null
+          nombre?: string
+          remates_activos?: number | null
+          ubicacion?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      conversaciones: {
+        Row: {
+          created_at: string
+          id: string
+          mensaje: string
+          respuesta: string | null
+          tipo: string | null
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          mensaje: string
+          respuesta?: string | null
+          tipo?: string | null
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          mensaje?: string
+          respuesta?: string | null
+          tipo?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
+      noticias: {
+        Row: {
+          autor: string
+          categoria: string
+          contenido: string
+          created_at: string
+          fecha_publicacion: string
+          id: string
+          imagen_url: string | null
+          titulo: string
+          updated_at: string
+        }
+        Insert: {
+          autor: string
+          categoria: string
+          contenido: string
+          created_at?: string
+          fecha_publicacion?: string
+          id?: string
+          imagen_url?: string | null
+          titulo: string
+          updated_at?: string
+        }
+        Update: {
+          autor?: string
+          categoria?: string
+          contenido?: string
+          created_at?: string
+          fecha_publicacion?: string
+          id?: string
+          imagen_url?: string | null
+          titulo?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          created_at: string
+          email: string
+          id: string
+          nombre: string
+          updated_at: string
+        }
+        Insert: {
+          avatar_url?: string | null
+          created_at?: string
+          email: string
+          id: string
+          nombre: string
+          updated_at?: string
+        }
+        Update: {
+          avatar_url?: string | null
+          created_at?: string
+          email?: string
+          id?: string
+          nombre?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      remates: {
+        Row: {
+          cabana_id: string
+          categoria: string
+          created_at: string
+          descripcion: string | null
+          estado: string | null
+          fecha: string
+          id: string
+          imagen_url: string | null
+          precio_base: number | null
+          titulo: string
+          ubicacion: string
+          updated_at: string
+        }
+        Insert: {
+          cabana_id: string
+          categoria: string
+          created_at?: string
+          descripcion?: string | null
+          estado?: string | null
+          fecha: string
+          id?: string
+          imagen_url?: string | null
+          precio_base?: number | null
+          titulo: string
+          ubicacion: string
+          updated_at?: string
+        }
+        Update: {
+          cabana_id?: string
+          categoria?: string
+          created_at?: string
+          descripcion?: string | null
+          estado?: string | null
+          fecha?: string
+          id?: string
+          imagen_url?: string | null
+          precio_base?: number | null
+          titulo?: string
+          ubicacion?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "remates_cabana_id_fkey"
+            columns: ["cabana_id"]
+            isOneToOne: false
+            referencedRelation: "cabanas"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      user_roles: {
+        Row: {
+          created_at: string
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "admin" | "moderator" | "user"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +358,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["admin", "moderator", "user"],
+    },
   },
 } as const
