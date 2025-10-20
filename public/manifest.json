@@ -1,0 +1,22 @@
+{
+  "name": "Asociación Argentina de Angus",
+  "short_name": "Angus AA",
+  "description": "Portal para socios de la Asociación Argentina de Angus",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2D5016",
+  "theme_color": "#2D5016",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
