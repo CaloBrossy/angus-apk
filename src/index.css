@@ -8,104 +8,119 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Angus Brand Colors */
-    --background: 0 0% 98%;
-    --foreground: 0 0% 15%;
+    /* Premium Agro Design System 2024-2025 */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 8%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 15%;
+    --card-foreground: 0 0% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 15%;
+    --popover-foreground: 0 0% 8%;
 
-    /* Angus Green */
-    --primary: 100 45% 25%;
+    /* Premium Forest Green - Soft & Elegant */
+    --primary: 142 60% 45%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 100 40% 35%;
+    --primary-light: 142 60% 55%;
+    --primary-dark: 142 60% 35%;
     
-    /* Earth Brown */
-    --secondary: 25 50% 35%;
+    /* Rich Earth Brown - Premium & Warm */
+    --secondary: 28 65% 42%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-light: 25 45% 45%;
+    --secondary-light: 28 65% 52%;
+    --secondary-dark: 28 65% 32%;
 
-    /* Premium Gold */
-    --accent: 45 90% 55%;
-    --accent-foreground: 0 0% 15%;
-    --accent-glow: 45 100% 65%;
+    /* Luxury Gold - Sophisticated Accent */
+    --accent: 43 96% 56%;
+    --accent-foreground: 0 0% 8%;
+    --accent-glow: 43 96% 66%;
+    --accent-dark: 43 96% 46%;
 
-    --muted: 0 0% 96%;
+    /* Premium Neutrals */
+    --muted: 0 0% 97%;
     --muted-foreground: 0 0% 45%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 100 45% 25%;
+    --border: 0 0% 94%;
+    --input: 0 0% 94%;
+    --ring: 142 60% 45%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(100 45% 25%), hsl(100 40% 35%));
-    --gradient-gold: linear-gradient(135deg, hsl(45 90% 55%), hsl(45 100% 65%));
-    --gradient-earth: linear-gradient(135deg, hsl(25 50% 35%), hsl(25 45% 45%));
-    --gradient-overlay: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    /* Premium Gradients - Soft & Elegant */
+    --gradient-primary: linear-gradient(135deg, hsl(142 60% 45%), hsl(142 60% 55%));
+    --gradient-gold: linear-gradient(135deg, hsl(43 96% 56%), hsl(43 96% 66%));
+    --gradient-earth: linear-gradient(135deg, hsl(28 65% 42%), hsl(28 65% 52%));
+    --gradient-overlay: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    --gradient-soft-green: linear-gradient(135deg, hsl(142 60% 45%), hsl(142 50% 60%));
 
-    /* Shadows */
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
-    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.16);
-    --shadow-glow: 0 0 32px hsla(45, 90%, 55%, 0.3);
+    /* Modern Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
+    --shadow-glow: 0 0 40px hsla(43, 96%, 56%, 0.2);
 
-    /* Glass effect */
-    --glass-bg: rgba(255, 255, 255, 0.7);
-    --glass-border: rgba(255, 255, 255, 0.2);
+    /* Premium Glass Effect */
+    --glass-bg: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(255, 255, 255, 0.3);
+    --glass-backdrop: blur(20px);
   }
 
   .dark {
-    --background: 0 0% 8%;
-    --foreground: 0 0% 95%;
+    --background: 0 0% 6%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 12%;
-    --card-foreground: 0 0% 95%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 12%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 100 40% 40%;
+    --primary: 142 60% 55%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 100 35% 50%;
+    --primary-light: 142 60% 65%;
+    --primary-dark: 142 60% 45%;
 
-    --secondary: 25 45% 45%;
+    --secondary: 28 65% 52%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-light: 25 40% 55%;
+    --secondary-light: 28 65% 62%;
+    --secondary-dark: 28 65% 42%;
 
-    --accent: 45 100% 65%;
-    --accent-foreground: 0 0% 15%;
-    --accent-glow: 45 100% 75%;
+    --accent: 43 96% 66%;
+    --accent-foreground: 0 0% 8%;
+    --accent-glow: 43 96% 76%;
+    --accent-dark: 43 96% 56%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 65%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 100 40% 40%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 142 60% 55%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(100 40% 40%), hsl(100 35% 50%));
-    --gradient-gold: linear-gradient(135deg, hsl(45 100% 65%), hsl(45 100% 75%));
-    --gradient-earth: linear-gradient(135deg, hsl(25 45% 45%), hsl(25 40% 55%));
+    --gradient-primary: linear-gradient(135deg, hsl(142 60% 55%), hsl(142 60% 65%));
+    --gradient-gold: linear-gradient(135deg, hsl(43 96% 66%), hsl(43 96% 76%));
+    --gradient-earth: linear-gradient(135deg, hsl(28 65% 52%), hsl(28 65% 62%));
     --gradient-overlay: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+    --gradient-soft-green: linear-gradient(135deg, hsl(142 60% 55%), hsl(142 50% 70%));
 
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
-    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
-    --shadow-glow: 0 0 32px hsla(45, 100%, 65%, 0.4);
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.4), 0 4px 6px rgba(0, 0, 0, 0.3);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.3);
+    --shadow-glow: 0 0 40px hsla(43, 96%, 66%, 0.3);
 
-    --glass-bg: rgba(30, 30, 30, 0.7);
+    --glass-bg: rgba(20, 20, 20, 0.8);
     --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-backdrop: blur(20px);
   }
 }
 
@@ -117,6 +132,11 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    font-variation-settings: normal;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   /* Smooth scrolling */
@@ -134,15 +154,25 @@ All colors MUST be HSL.
     display: none;
   }
 
-  /* Glass morphism utility */
+  /* Premium Glass Morphism */
   .glass {
     background: var(--glass-bg);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: var(--glass-backdrop);
+    -webkit-backdrop-filter: var(--glass-backdrop);
     border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-lg);
   }
 
-  /* Gradient text */
+  .glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-backdrop);
+    -webkit-backdrop-filter: var(--glass-backdrop);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-xl);
+    border-radius: var(--radius);
+  }
+
+  /* Premium Gradient Text */
   .gradient-text {
     background: var(--gradient-gold);
     -webkit-background-clip: text;
@@ -150,9 +180,93 @@ All colors MUST be HSL.
     background-clip: text;
   }
 
-  /* Touch feedback */
+  .gradient-text-primary {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Modern Touch Feedback */
   .touch-feedback {
-    @apply active:scale-95 transition-transform;
+    @apply active:scale-95 transition-all duration-150 ease-out;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 ease-out hover:scale-105 hover:shadow-xl;
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300 ease-out hover:shadow-glow;
+  }
+
+  /* Premium Button Animations */
+  .btn-premium {
+    @apply relative overflow-hidden transition-all duration-300 ease-out;
+  }
+
+  .btn-premium::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+  }
+
+  .btn-premium:hover::before {
+    left: 100%;
+  }
+
+  /* Floating Animation */
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* Soft Glow Effects */
+  .soft-glow {
+    box-shadow: 0 0 20px hsla(142, 60%, 45%, 0.15);
+  }
+
+  .soft-glow-hover:hover {
+    box-shadow: 0 0 30px hsla(142, 60%, 45%, 0.25);
+    transition: box-shadow 0.3s ease;
+  }
+
+  /* Gentle Pulse Animation */
+  .gentle-pulse {
+    animation: gentle-pulse 3s ease-in-out infinite;
+  }
+
+  @keyframes gentle-pulse {
+    0%, 100% { 
+      box-shadow: 0 0 20px hsla(142, 60%, 45%, 0.15);
+    }
+    50% { 
+      box-shadow: 0 0 30px hsla(142, 60%, 45%, 0.25);
+    }
+  }
+
+  /* Soft Gradient Background */
+  .bg-soft-green {
+    background: var(--gradient-soft-green);
+  }
+
+  /* Elegant Hover Effects */
+  .elegant-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .elegant-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px hsla(142, 60%, 45%, 0.15);
   }
 }
 
@@ -166,7 +280,7 @@ All colors MUST be HSL.
     padding-bottom: env(safe-area-inset-bottom);
   }
 
-  /* Gradient backgrounds */
+  /* Premium Gradient Backgrounds */
   .bg-gradient-primary {
     background: var(--gradient-primary);
   }
@@ -177,5 +291,59 @@ All colors MUST be HSL.
 
   .bg-gradient-earth {
     background: var(--gradient-earth);
+  }
+
+  .bg-gradient-glass {
+    background: var(--gradient-glass);
+  }
+
+  /* Modern Shadow Utilities */
+  .shadow-premium {
+    box-shadow: var(--shadow-lg);
+  }
+
+  .shadow-premium-xl {
+    box-shadow: var(--shadow-xl);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Premium Border Radius */
+  .rounded-premium {
+    border-radius: var(--radius);
+  }
+
+  .rounded-premium-lg {
+    border-radius: calc(var(--radius) * 1.5);
+  }
+
+  .rounded-premium-xl {
+    border-radius: calc(var(--radius) * 2);
+  }
+
+  /* Text Utilities */
+  .text-premium {
+    font-weight: 600;
+    letter-spacing: -0.025em;
+  }
+
+  .text-premium-lg {
+    font-weight: 700;
+    letter-spacing: -0.05em;
+  }
+
+  /* Interactive States */
+  .interactive {
+    @apply transition-all duration-200 ease-out cursor-pointer;
+  }
+
+  .interactive:hover {
+    @apply scale-105 shadow-lg;
+  }
+
+  .interactive:active {
+    @apply scale-95;
   }
 }
